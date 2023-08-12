@@ -7,7 +7,9 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        'custom': ['Merriweather', 'serif'],
+        'navbar': ['Merriweather', 'serif'],
+        'presentation': ['Anton', 'sans-serif'],
+        'text': ['Poppins', 'sans-serif'],
       }
     },
   },

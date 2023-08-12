@@ -1,6 +1,6 @@
 const Navbar = () => {
   return (
-    <nav className='flex items-center justify-between bg-[#202020] shadow-lg shadow-[#202020]/50 h-[40px] mr-2 ml-2 font-custom'>
+    <nav className='flex items-center justify-between bg-[#202020] shadow-lg shadow-[#202020]/50 h-[60px] mr-2 ml-2 font-navbar text-[18px]'>
       <div>
         <a href='/' className='text-white'>Home</a>
       </div>
