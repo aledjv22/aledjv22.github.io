@@ -17,19 +17,19 @@ const AboutMe = () => {
         <ul className='flex flex-row justify-evenly mt-[30px]'>
           <li>
             <a href='https://www.linkedin.com/in/aledjv/' target='_blank'>
-              <img src='https://acortar.link/linkedinSVG' 
+              <img src='https://res.cloudinary.com/takeoutcode-app/image/upload/v1677779233/portfolio/logos/linkedin-logo_kwowwe.svg' 
               className='h-[40px] w-[40px]' alt='LinkedIn-icon' />
             </a>
           </li>
           <li>
             <a href='https://github.com/aledjv22' target='_blank'>
-              <img src='https://acortar.link/githubSVG' 
+              <img src='https://res.cloudinary.com/takeoutcode-app/image/upload/v1677779261/portfolio/logos/github-logo-light_brzylu.svg' 
               alt='GitHub-icon' className='h-[40px] w-[40px]' />
             </a>
           </li>
           <li>
             <a href='https://twitter.com/v_alediaz_' target='_blank'>
-              <img src='https://acortar.link/twitterSVG' 
+              <img src='https://res.cloudinary.com/takeoutcode-app/image/upload/v1677779234/portfolio/logos/twitter-logo_b6codf.svg' 
               alt='Twitter-icon' className='h-[40px] w-[40px]' />
             </a>
           </li>
