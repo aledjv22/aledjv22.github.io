@@ -10,8 +10,8 @@ const Skills = () => {
   ];
 
   return (
-    <div className='text-white font-text'>
-      <h2 className='flex justify-center text-[30px] font-bold mb-5 mt-20'>
+    <div className='text-white font-text pt-[60px] pb-[20px]'>
+      <h2 className='flex justify-center text-[30px] font-bold mb-5'>
         Technical Skills
       </h2>
       <figure className='grid lg:grid-cols-7 md:grid-cols-5 sm:grid-cols-3 gap-5 w-full min-h-[150px] justify-evenly'>
