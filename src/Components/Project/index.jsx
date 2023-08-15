@@ -1,8 +1,14 @@
-const ProjectInfo = ({name, description, repository, web}) => {
+import { useState } from "react";
 
+const Image = ({name , image}) => {
   return (
-    <article className='flex flex-col items-center text-white font-text' key={name}>
-      <div className='flex flex-col items-center h-[300px] w-[350px] rounded-[35px] bg-blue-700 p-7 justify-between'>
+    <img src={image} alt={name} className='h-[300px] w-[350px] rounded-[35px]'/>
+  );
+}
+
+const Info = ({name, description, repository, web}) => {
+  return (
+    <div className='flex flex-col items-center h-[300px] w-[350px] rounded-[35px] bg-blue-700 p-7 justify-between'>
         <h3 className='text-[25px] font-bold mt-1 mb-1 underline underline-offset-4'>
           {name}
         </h3>
@@ -22,8 +28,22 @@ const ProjectInfo = ({name, description, repository, web}) => {
           </a>
         </div>
       </div>
+  );
+}
+
+const Project = ({name, image, description, repository, web}) => {
+  const [isHovered, setIsHovered] = useState(false);
+
+  return (
+    <article className='flex flex-col items-center text-white font-text' key={name} onMouseEnter={()=>(setIsHovered(true))} onMouseLeave={()=>(setIsHovered(false))}>
+      {
+        isHovered ? 
+        <Info name={name} description={description} repository={repository} web={web} />
+        :
+        <Image name={name} image={image}/>
+      }
     </article>
   );
 }
 
-export default ProjectInfo;
+export default Project;

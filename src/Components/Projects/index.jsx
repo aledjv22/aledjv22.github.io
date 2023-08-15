@@ -1,6 +1,4 @@
-import { useState } from 'react';
-import ProjectImg from '../ProjectImg';
-import ProjectInfo from '../ProjectInfo';
+import Project from '../Project';
 import todoInReact from '../../Images/todoInReact.jpg';
 import onlineStore from '../../Images/onlineStore.jpg';
 import basicCalculator from '../../Images/basicCalculator.jpg';
@@ -17,20 +15,15 @@ const Projects = () => {
     {name: 'Discounts', description: 'Project a discount calculator and discount coupons.', image: discounts, repository: 'https://github.com/aledjv22/discounts', web: 'https://aledjv22.github.io/discounts/'},
   ];
 
-  const [isHovered, setIsHovered] = useState(false);
-
   return (
     <div className='text-white font-text pt-[60px] pb-[20px]'>
       <h2 className='flex justify-center text-[30px] font-bold mb-5'>
         Projects
       </h2>
-      <figure className='grid lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-1 gap-5 w-full min-h-[150px]' onMouseEnter={()=>(setIsHovered(true))} onMouseLeave={()=>(setIsHovered(false))}>
+      <figure className='grid lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-1 gap-5 w-full min-h-[150px]'>
         {
           projects.map(project => (
-            isHovered?
-            <ProjectInfo name={project.name} description={project.description} repository={project.repository} web={project.web} key={project.name}/>
-            :
-            <ProjectImg name={project.name} image={project.image} key={project.name}/>
+            <Project name={project.name} image={project.image} description={project.description} repository={project.repository} web={project.web} key={project.name}/>
           ))
         }
       </figure>
