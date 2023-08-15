@@ -35,14 +35,14 @@ const Project = ({name, image, description, repository, web}) => {
   const [isHovered, setIsHovered] = useState(false);
 
   return (
-    <article className='flex flex-col items-center text-white font-text' key={name} onMouseEnter={()=>(setIsHovered(true))} onMouseLeave={()=>(setIsHovered(false))}>
+    <div className='text-white font-text w-[350px]' key={name} onMouseEnter={()=>(setIsHovered(true))} onMouseLeave={()=>(setIsHovered(false))}>
       {
         isHovered ? 
         <Info name={name} description={description} repository={repository} web={web} />
         :
         <Image name={name} image={image}/>
       }
-    </article>
+    </div>
   );
 }
 

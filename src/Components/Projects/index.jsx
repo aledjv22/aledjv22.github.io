@@ -20,10 +20,12 @@ const Projects = () => {
       <h2 className='flex justify-center text-[30px] font-bold mb-5'>
         Projects
       </h2>
-      <figure className='grid lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-1 gap-5 w-full min-h-[150px]'>
+      <figure className='grid 2xl:grid-cols-4 xl:grid-cols-3 lg:grid-cols-2 md:grid-cols-1 gap-5 w-full min-h-[150px]'>
         {
           projects.map(project => (
-            <Project name={project.name} image={project.image} description={project.description} repository={project.repository} web={project.web} key={project.name}/>
+            <article className='flex justify-center items-center'>
+              <Project name={project.name} image={project.image} description={project.description} repository={project.repository} web={project.web} key={project.name}/>
+            </article>
           ))
         }
       </figure>
