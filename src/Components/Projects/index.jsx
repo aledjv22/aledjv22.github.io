@@ -23,7 +23,7 @@ const Projects = () => {
       <figure className='grid 2xl:grid-cols-4 xl:grid-cols-3 lg:grid-cols-2 md:grid-cols-1 gap-5 w-full min-h-[150px]'>
         {
           projects.map(project => (
-            <article className='flex justify-center items-center'>
+            <article className='flex justify-center items-center' key={project.name}>
               <Project name={project.name} image={project.image} description={project.description} repository={project.repository} web={project.web} key={project.name}/>
             </article>
           ))
