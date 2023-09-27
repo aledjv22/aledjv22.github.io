@@ -3,7 +3,7 @@ import profile from '../../Images/Foto.png';
 const AboutMe = () => {
   return (
     <>
-    <h2 className='flex justify-center text-white text-[30px] font-text font-bold mb-5'>
+    <h2 className='flex justify-center text-white text-[30px] font-text font-bold mb-5' id='about-me-section'>
       About me
     </h2>
     <div className='flex flex-row max-md:flex-col justify-evenly items-center gap-[25px] pl-2 pr-2'>

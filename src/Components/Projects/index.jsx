@@ -17,7 +17,7 @@ const Projects = () => {
 
   return (
     <div className='text-white font-text pt-[60px] pb-[20px]'>
-      <h2 className='flex justify-center text-[30px] font-bold mb-5'>
+      <h2 className='flex justify-center text-[30px] font-bold mb-5' id='projects-section'>
         Projects
       </h2>
       <figure className='grid 2xl:grid-cols-4 xl:grid-cols-3 lg:grid-cols-2 md:grid-cols-1 gap-5 w-full min-h-[150px]'>
