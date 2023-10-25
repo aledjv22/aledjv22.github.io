@@ -13,11 +13,11 @@ const Skills = () => {
   ];
 
   return (
-    <div className='text-white font-text pt-[60px] pb-[20px]'>
-      <h2 className='flex justify-center text-[30px] font-bold mb-5' id='skills-section'>
+    <div className='text-white font-text pt-[40px]'>
+      <h2 className='flex justify-center text-[30px] font-bold mb-2' id='skills-section'>
         Technical Skills
       </h2>
-      <figure className='grid lg:grid-cols-7 md:grid-cols-5 sm:grid-cols-3 gap-5 w-full min-h-[150px] justify-evenly'>
+      <figure className='grid lg:grid-cols-7 md:grid-cols-5 sm:grid-cols-3 grid-cols-2 gap-5 w-full min-h-[150px] justify-evenly'>
         {
           skills.map(skill => (
             <article className='flex flex-col items-center' key={skill.name}>

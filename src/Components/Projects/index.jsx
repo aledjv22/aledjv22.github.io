@@ -16,11 +16,11 @@ const Projects = () => {
   ];
 
   return (
-    <div className='text-white font-text pt-[60px] pb-[20px]'>
-      <h2 className='flex justify-center text-[30px] font-bold mb-5' id='projects-section'>
+    <div className='text-white font-text pt-[40px]'>
+      <h2 className='flex justify-center text-[30px] font-bold mb-2' id='projects-section'>
         Projects
       </h2>
-      <figure className='grid 2xl:grid-cols-4 xl:grid-cols-3 lg:grid-cols-2 md:grid-cols-1 gap-5 w-full min-h-[150px]'>
+      <figure className='grid xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-5 w-full min-h-[150px]'>
         {
           projects.map(project => (
             <article className='flex justify-center items-center' key={project.name}>

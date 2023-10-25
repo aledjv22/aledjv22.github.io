@@ -6,11 +6,11 @@ const AboutMe = () => {
     <h2 className='flex justify-center text-white text-[30px] font-text font-bold mb-5' id='about-me-section'>
       About me
     </h2>
-    <div className='flex flex-row max-md:flex-col justify-evenly items-center gap-[25px] pl-2 pr-2'>
+    <div className='flex flex-row max-md:flex-col justify-evenly items-center md:gap-[25px] pl-2 pr-2'>
       <img src={profile} alt='profile' 
-      className='w-[362px] h-[450px] rounded-[40px]'/>  
+      className='sm:w-[362px] sm:h-[450px] w-[200px] h-[250px] sm:rounded-[40px]'/>  
       <div>
-        <p className='text-white text-[19px] font-text max-w-[680px] max-md:p-2'>
+        <p className='text-white text-[19px] font-text max-w-[680px] px-2 pt-1'>
         I am a web developer specialized in Frontend. I have always been passionate about all things computer and website building, which is why I pursue them as a career.
         <br/><br/>
         I have more than a year of experience in web development. I am competent to work effectively in a team.
