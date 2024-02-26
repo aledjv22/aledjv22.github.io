@@ -1,4 +1,4 @@
-const Skills = () => {
+const Skills = ({ language }) => {
   let skills = [
     { name: 'React.JS', icon: 'https://res.cloudinary.com/takeoutcode-app/image/upload/v1677779924/portfolio/logos/react-logo_kfztxc.svg' },
     { name: 'Vite', icon: 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Vitejs-logo.svg/1039px-Vitejs-logo.svg.png'},
@@ -12,10 +12,15 @@ const Skills = () => {
     { name: 'JavaScript', icon: 'https://res.cloudinary.com/takeoutcode-app/image/upload/v1677781099/portfolio/logos/javascript-logo_zltq85.svg'}
   ];
 
+  const translations = {
+    English: 'Technical Skills',
+    Español: 'Habilidades Técnicas'
+  }
+
   return (
     <div className='text-white font-text pt-[40px]'>
       <h2 className='flex justify-center text-[30px] font-bold mb-2' id='skills-section'>
-        Technical Skills
+        {translations[language]}
       </h2>
       <figure className='grid lg:grid-cols-7 md:grid-cols-5 sm:grid-cols-3 grid-cols-2 gap-5 w-full min-h-[150px] justify-evenly'>
         {
