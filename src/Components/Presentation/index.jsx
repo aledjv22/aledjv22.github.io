@@ -13,7 +13,7 @@ const Presentation = ({ language }) => {
   return (
     <section 
     className='flex items-center justify-center w-full text-white mb-[10px]'>
-      <h1 className='font-presentation text-[50px] md:text-[100px]'>
+      <h1 className='font-presentation text-[40px] md:text-[100px]'>
         {translations[language].greeting} <br/>{translations[language].job}
       </h1>
     </section>
