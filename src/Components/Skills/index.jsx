@@ -5,7 +5,6 @@ const Skills = ({ language }) => {
     { name: 'TailwindCSS', icon: 'https://res.cloudinary.com/takeoutcode-app/image/upload/v1677779230/portfolio/logos/tailwindcss-logo_kywpbm.svg' },
     { name: 'Node JS', icon: 'https://res.cloudinary.com/takeoutcode-app/image/upload/v1677779924/portfolio/logos/node-logo_cbvcrx.svg' },
     { name: 'PostgreSQL', icon: 'https://res.cloudinary.com/takeoutcode-app/image/upload/v1677780295/portfolio/logos/postgresql-logo_xarsii.svg'},
-    { name: 'Docker', icon: 'https://res.cloudinary.com/takeoutcode-app/image/upload/v1677779234/portfolio/logos/docker-logo_knsjtz.svg'},
     { name: 'Git', icon: 'https://res.cloudinary.com/takeoutcode-app/image/upload/v1677779234/portfolio/logos/git-logo_fhege3.svg'},
     { name: 'HTML', icon: 'https://res.cloudinary.com/takeoutcode-app/image/upload/v1677780350/portfolio/logos/html-logo_ma2f9z.svg' },
     { name: 'CSS', icon: 'https://res.cloudinary.com/takeoutcode-app/image/upload/v1677780308/portfolio/logos/css-logo_wrehg2.svg'},
