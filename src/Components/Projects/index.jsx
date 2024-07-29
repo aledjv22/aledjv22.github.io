@@ -1,6 +1,4 @@
 import Project from '../Project';
-import huellitas from '../../Images/homeHuellitas.png';
-import onlineStore from '../../Images/onlineStore.jpg';
 
 const translations = {
   English: {
@@ -34,12 +32,12 @@ const translations = {
 const Projects = ({ language }) => {
   let projects = [
     {
-      image: huellitas, 
+      image: "https://i.ibb.co/pvPgQV5/home-Huellitas.png", 
       repository: 'https://github.com/aledjv22/huellitas', 
       web: 'https://www.huellitas.live/'
     },
     {
-      image: onlineStore, 
+      image: "https://i.ibb.co/3B2jH4t/online-Store.jpg", 
       repository: 'https://github.com/aledjv22/online-store', 
       web:'https://aledjv22.github.io/online-store/'
     },

@@ -1,5 +1,3 @@
-import profile from '../../Images/Foto.png';
-
 const translations = {
   English: {
     aboutMe: 'About me',
@@ -18,7 +16,7 @@ const AboutMe = ({ language }) => {
       {translations[language].aboutMe}
     </h2>
     <div className='flex flex-row max-md:flex-col justify-evenly items-center md:gap-[25px] pl-2 pr-2'>
-      <img src={profile} alt='profile' 
+      <img src="https://i.ibb.co/Bw5GDbS/Foto.jpg" alt='profile' 
       className='sm:w-[362px] sm:h-[450px] w-[200px] h-[250px] sm:rounded-[40px]'/>  
       <div>
         <p className='text-white text-[19px] font-text max-w-[680px] px-2 pt-1'>
