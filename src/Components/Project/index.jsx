@@ -16,12 +16,12 @@ const Info = ({name, description, repository, web}) => {
           {description}
         </p>
         <div className='flex flex-row w-full justify-evenly'>
-          <a href={repository} target='_blank' className='bg-black flex flex-col items-center p-1 rounded-2xl'>
+          <a href={repository} target='_blank' className='bg-black flex flex-col items-center p-1 rounded-2xl hover:bg-gray-600 w-[62.34px]'>
               <img src='https://res.cloudinary.com/takeoutcode-app/image/upload/v1677779261/portfolio/logos/github-logo-light_brzylu.svg' 
-              alt='GitHub-icon' className='h-[40px] w-[40px] mb-1' />
+              alt='GitHub-icon' className='h-[40px] w-[40px] mb-1 ml-[2px]' />
               GitHub
           </a>
-          <a href={web} target='_blank' className='bg-black flex flex-col items-center p-1 rounded-2xl'>
+          <a href={web} target='_blank' className='bg-black flex flex-col items-center p-1 rounded-2xl hover:bg-gray-600 w-[62.34px]'>
               <img src='https://static.od-cdn.com/globe-icon-outline.svg' 
               alt='Web-icon' className='h-[40px] w-[40px] mb-1' />
               Web
